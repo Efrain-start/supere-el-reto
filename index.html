@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Efrain Aguilar">
+    <meta name="description" content="Tarjetas de producto responsivas con modal">
+    <meta name="keywords" content="HTML, CSS, Bootstrap, Tarjetas, Modal, Responsivo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo -->
+    <title>Efrain | Tarjetas de producto responsivas con modal</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/download.jpg" type="image/x-icon">
+    <!-- bootstrap -->
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Producto Card -->
+<div class="product-card container">
+  <img src="img/hq720.jpg" alt="Crema Hidratante" class="product-card__image">
+  <div class="product-card__content">
+    <h3 class="product-card__title">Crema Hidratante Natural</h3>
+    <p class="product-card__price">$249.00 MXN</p>
+    <button type="button" class="product-card__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">
+      Ver más
+    </button>
+  </div>
+</div>
+
+<!-- Modal Bootstrap -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Crema Hidratante Natural</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/Natural-Scents-Julio-31-Edit.webp" class="img-fluid mb-3" alt="Crema Hidratante">
+        <p>Una crema ligera y sin químicos diseñada para hidratar profundamente y darle a tu piel un brillo natural.</p>
+        <ul>
+          <li>100% ingredientes naturales</li>
+          <li>No contiene parabenos</li>
+          <li>Ideal para todo tipo de piel</li>
+          <li>Envase reciclable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="product-card container">
+  <img src="img/95f5893e947099d97e0a91a3218965fd.jpg" alt="Jabón de Té Verde" class="product-card__image">
+  <div class="product-card__content">
+    <h3 class="product-card__title">Jabón Orgánico de Té Verde</h3>
+    <p class="product-card__price">$99.00 MXN</p>
+    <button class="product-card__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Ver más</button>
+  </div>
+</div>
+<div class="product-card container">
+  <img src="img/infiltraciones-prp.jpg" alt="Sérum Revitalizante" class="product-card__image">
+  <div class="product-card__content">
+    <h3 class="product-card__title">Sérum Facial Revitalizante</h3>
+    <p class="product-card__price">$329.00 MXN</p>
+    <button class="product-card__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Ver más</button>
+  </div>
+</div>
+<div class="product-card container">
+  <img src="img/16752886653411.jpg" alt="Mascarilla de Arcilla" class="product-card__image">
+  <div class="product-card__content">
+    <h3 class="product-card__title">Mascarilla de Arcilla Rosa</h3>
+    <p class="product-card__price">$189.00 MXN</p>
+    <button class="product-card__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Ver más</button>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Crema Hidratante Natural</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/300x200.png?text=Crema+Natural" class="img-fluid mb-3">
+        <p>Una crema ligera para hidratar profundamente la piel. Ideal para uso diario.</p>
+        <ul>
+          <li>Sin químicos</li>
+          <li>Vegana</li>
+          <li>Envase reciclable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Jabón Orgánico de Té Verde</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/jabon-natural-organico-arbol-del-te-y-te-verde-2.jpg" class="img-fluid mb-3">
+        <p>Jabón artesanal con extracto de té verde, limpia e hidrata la piel naturalmente.</p>
+        <ul>
+          <li>Hecho a mano</li>
+          <li>Libre de sulfatos</li>
+          <li>100% biodegradable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sérum Facial Revitalizante</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/Revita01_llll.jpg" class="img-fluid mb-3">
+        <p>Concentrado facial con ácido hialurónico, ideal para revitalizar la piel seca o apagada.</p>
+        <ul>
+          <li>Alta concentración de activos</li>
+          <li>Resultados visibles en 7 días</li>
+          <li>Libre de fragancias artificiales</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Mascarilla de Arcilla Rosa</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/mascarilla-de-arcilla-para-salud-rostro.webp" class="img-fluid mb-3">
+        <p>Mascarilla facial suave que purifica y calma la piel sensible.</p>
+        <ul>
+          <li>Arcilla 100% natural</li>
+          <li>No reseca la piel</li>
+          <li>Con extracto de manzanilla</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
